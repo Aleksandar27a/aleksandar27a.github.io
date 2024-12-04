@@ -1,0 +1,6 @@
+[
+    { "id": 0, "productName": "Iphone 10", "img": "proizvodi/image/D_759471-MLA71782897602_092023-C.jpg", "price": "1200$" },
+    { "id": 1, "productName": "Iphone 11", "img": "/proizvodi/image/apple_iphone_11_white_1_7.jpg", "price": "1300$" },
+    { "id": 2, "productName": "Iphone 12", "img": "/proizvodi/image/iphone-12-blue.jpg", "price": "1400$" },
+    { "id": 3, "productName": "Iphone 14", "img": "/proizvodi/image/czcs_iphone14_q422_purple_pdp_image_position-1a_t_4_3.jpg", "price": "1650$" }
+]

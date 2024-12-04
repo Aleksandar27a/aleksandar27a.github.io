@@ -1,0 +1,814 @@
+*{
+    margin: 0; 
+    padding: 0;
+    list-style: none;
+}
+
+:root{
+    --primary-color: #fff;
+    --secondary-color:#cdd7de;
+    --container-width-lg:80%;
+    --container-width-md:90%;
+    --container-width-sm:94%;
+}
+h1,
+h2,
+h3,
+h4,
+h5{
+    line-height: 1.2;
+} 
+h1{
+    font-size:2.4rem;
+}
+h2{
+    font-size: 2rem;
+}
+h3{
+    font-size: 1.6rem;
+}
+h4{
+    font-size: 1.3rem;
+}
+body{
+    font-family:'Poppins',sans-serif;
+    /* opacity: .6; */
+   background-color: rgb(211, 211, 211);
+}
+.container{
+    width: var(--container-width-lg);
+    margin:0 auto;
+}
+img{
+    width: 100%;
+    height: auto;
+    object-fit:fill;
+}
+nav{
+ 
+    top: 0;
+    width: 100vw;
+    height: 7rem;
+    z-index: 1;
+    position: sticky;
+    /* position: fixed; */
+    background: #fff
+    
+}
+.hamburger-menu{
+    display: none;
+}
+.inside-cart{
+    display: none;
+    transform:translateX(60%);
+    transition: 1s;
+    overflow-y: auto;
+    width: 30%;
+    position: absolute;
+    opacity: 1;
+    right: 21%;
+    z-index: 21;
+    height: 600px;
+    background-color: rgb(7, 46, 65);
+}
+.cart-items{
+    color: rgb(66, 62, 173);
+    font-size: 2rem;
+}
+.mobile-wrapper img{
+    position: relative;
+}
+
+.cart-info{
+    display: flex;
+    max-width: 100%;
+}
+.cart-info img{
+    width: 20%;
+}
+.cart-data{
+    display: flex;
+    color: white;
+    text-align: center;
+}
+.cart-data h3,h4{
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-bottom: .6rem;
+}
+.cart-data p{
+    cursor: pointer;
+    font-size: 1rem;
+}
+.amount {
+    display: flex;
+    gap: .6rem;
+
+}
+.amount p{
+    font-size:1.4rem;
+}
+.amount span{
+    font-size: .6rem;
+    cursor: pointer;
+    color: white;
+}
+.nav__container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+.left h1{
+    font-weight: 400;
+}
+.middle  ul{
+    display: flex;
+    gap: 2rem;
+    
+}
+ 
+.middle ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    
+}
+.middle ul li a:hover{
+    color: #cdd7de;
+    transition: 300ms all ease;
+}
+.right{
+    display: flex;
+    gap: 1rem;
+}
+.loop {
+    cursor: pointer;
+    
+}
+.search{
+    display: flex;
+    gap: 1rem;
+}
+#search{
+     width: 300px;
+     height: 20px;
+     display: none;
+}
+#search:focus {
+    border-color: rgb(101, 101, 138); /* Promena boje ivice na fokus */
+    outline: none;  
+}
+.cart-icon{
+    cursor: pointer;
+}
+
+
+header {
+    background-color:var(--secondary-color); 
+    align-items: center;
+    
+    height: 70vh;
+}
+.header__container{
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    
+    height: 100%;
+}
+.header-left h1{
+    font-weight: 400;
+    font-size: 5rem;
+    text-transform: uppercase;
+}
+
+
+                                                                                    /* Benefit */
+.benefit__container{
+    margin-top: 7rem;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+     /* gap: 1rem; */
+    /* justify-content: space-between; */
+    height: 35vh;
+}
+.title{
+    display: flex;
+    align-items: center;
+    gap: .4rem;
+}
+.title i{
+    font-size: 2rem;
+}
+.title h4{
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.6rem;
+    text-align: center;
+}
+.text p {
+    color: gray;
+    
+}
+
+
+                                                                        /* Mobilni produkti */
+.mobile__container{
+     min-height: 100vh;
+}
+.mobile-title{
+    display: flex;
+    justify-content: space-between;
+}
+.mobile-title h1{
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.mobile-title a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: gray;
+    font-size: 1.4rem;
+}
+.mobile-title a:hover{
+    color: rgb(101, 101, 138);
+    transform: 300ms all ease;
+}
+
+.mobile-wrapper {
+    margin-top: 4rem;
+   display: grid;
+   gap: 6rem;
+   grid-template-columns: repeat(4,1fr);
+   
+    
+}
+.add-to-cart{
+    opacity: .8;
+    border: none;
+    padding: .6rem;
+    cursor: pointer;
+    background-color: rgb(87, 80, 80);
+    color: white;
+    display: block;
+    margin: 0 auto;
+    margin-top: .4rem;
+}
+.add-to-cart:hover{
+    background-color: transparent;
+    color: rgb(87, 80, 80);
+    transition: 800ms all ease;
+}
+.cart-item{
+     /* justify-content: space-around; */
+    gap: 3rem;
+}
+.cart-item span{
+    display: block;
+}
+ 
+.mobile-wrapper img{
+ max-width: 300px;
+}
+.mobile-wrapper p{
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.4rem;
+}
+ 
+.cart-info {
+    display: flex;
+    justify-content: space-around;
+    
+}
+.data-item{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+}
+ 
+.cart-data{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+   
+}
+.cart-item p,span{
+    flex-direction: column;
+}
+.cart-items {
+    text-align: center;
+    color: white;
+    padding-bottom: 1rem;
+}
+ 
+ .all-price  {
+     
+    color: rgb(42, 205, 27);
+    width: 100%;
+}
+
+ 
+.inside-cart{
+    border-radius: 30px;
+    opacity: 1;
+    z-index: 10;
+}
+
+                                                        /* Watches */
+.watches__container{
+    min-height: 80vh;
+}
+.watches-title{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.watches-title h1{
+    font-weight: 400;
+}
+.watches-title a{
+    text-decoration: none;
+    color: gray;
+    text-transform: capitalize;
+    font-size: 1.4rem;
+}
+.watches-title :hover{
+    color: rgb(101, 101, 138);
+    transition: 600ms all ease;
+}
+.watch-wrapper{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: space-between;
+     
+}
+.watch{
+    flex: 1 1 200px;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    /* max-width: 420px;   */
+    min-width: 180px; /* Minimalna širina za svaki sat */
+    flex-wrap: wrap;
+}
+.watch img {
+    width: 100%; /* Prilagođava sliku širini elementa */
+    height: auto; /* Zadržava proporcije slike */
+}
+
+                                            /* New sale section */
+.sale{
+    background-color: rgb(169, 168, 168);
+    height: 40vh;
+}
+ .sale__container {
+    
+    display: flex;
+    justify-content: space-around;
+    
+ }
+ .sale-left{
+    margin-top: 4rem;
+ }
+ .sale-left p{
+    text-align: center;
+    color: rgb(42, 205, 27);
+    font-size: 1.5rem;
+    font-weight: 800;
+ }
+ .sale-left h1{
+    margin-top: 1rem;
+    font-weight: 400;
+ }
+
+
+                                                    /* Testimonial */
+.testimonial-container h2{
+    color: rgb(111, 110, 110);
+    margin:5rem 0;
+    text-align: center;
+
+}
+.testimonial-container{
+    position: relative;
+    overflow-x: hidden;
+    margin-top: 5rem;
+    /* background: red; */
+    padding-bottom: 40px;
+
+}
+.testimonial{
+    background-color: rgb(111, 110, 110);
+    border-radius: 8px;
+     
+}
+.avatar{
+    border-radius:50%;
+    overflow: hidden;
+    width: 8rem;
+    /* height: 6rem; */
+    margin: 1rem auto 1rem;
+}
+.testimonial-info{
+    /* text-align: center; */
+    color: white;
+    height:8rem;
+}
+.avatar img{
+    max-width: 100%;
+}
+.testimonial-info h4{
+    text-align: center;
+}
+.testimonial-info p{
+    margin-bottom: 2rem;
+     text-align: center;
+}
+ 
+                                                            /* Contact us */
+.contact-us{
+    margin-top: 10rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(62, 62, 62);
+    height: 10rem;
+    border-radius: 8px;
+    flex-wrap: wrap;
+}
+.contact-left{
+    text-align: center;
+    flex: 1;
+}
+.contact-left h1{
+    font-weight: 400;
+    color: white;
+}
+.contact-left p{
+    color: gray;
+}
+.contact-right{
+    flex: 1;
+}
+#subscribe{
+    flex: 1;
+     text-align: left;
+     padding-left:  1.8rem;
+     padding-top: .8rem;
+     padding-bottom: .8rem;
+     padding-right: 6rem;
+    border: none;
+}
+
+.contact-right input:hover{
+    background-color:white;
+}
+.contact-right button{
+    padding: .8rem 6rem;
+    border: none;
+}
+#subscribe:focus{
+    outline: none;
+}
+.contact-right button:hover{
+    background-color: rgb(131, 131, 159);
+    color: white;
+    transition: 800ms all ease;
+}
+
+                                                            /* footer */
+footer{
+    margin-top: 10rem;
+    background-color: rgb(45, 45, 45);
+}
+.footer-container{
+    padding-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr))
+}
+ 
+ .footer-first{
+    text-align: center;
+ }
+.footer-first a{
+    color: white;
+    text-decoration: none;
+     font-size: 2rem;
+      
+}
+.footer-second{
+    text-align: center;
+}
+.footer-second h3{
+    color: white;
+    font-weight: 400;
+    
+}
+.footer-second ul li a {
+    text-decoration: none;
+    color: white;
+    
+}
+ .footer-third{
+    text-align: center;
+ }
+.footer-third h3{
+    color: white;
+    font-weight: 400;
+}
+
+.footer-third span{
+    color: whitesmoke;
+}
+.footer-third p{
+    color: gray;
+}
+.footer-forth{
+    text-align: center;
+    
+}
+.footer-forth h3{
+    color: white;
+    font-weight: 400;
+}
+.footer-forth span{
+    color: blue;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+                                            /* Za laptop */
+ @media screen and (max-width:1440px) {
+    
+    .container{
+        width: var(--container-width-md);
+    }
+    .inside-cart{
+        width: 400px;
+        right: 17%;
+        height: 500px;
+        z-index: 21;
+    }
+    .header-left h1{
+        font-size: 3rem;
+    }
+    .header-right img{
+        margin-top: 8rem;
+    }
+    .benefit__container{
+        margin-top: 11rem;
+    }
+    .title h4{
+        font-size:1rem;
+        
+    }
+    .text p{
+        font-size: .8rem;
+    }
+    .iframe{
+        font-size: 1rem;
+    }
+    .mobile__container{
+        min-height: 70vh;
+   }
+    .mob-info p{
+        font-size: 1rem;
+    }
+    .watches__container{
+        margin-bottom: 2rem;
+         
+    }
+    .sale{
+        height: 50vh;
+    }
+    #subscribe{
+        padding-right: 2rem;
+        padding-left: 1rem;
+    }
+    .contact-right button{
+        padding-right: 3rem;
+        padding-left: 3rem;
+        
+    }
+    .footer-container{
+        grid-template-columns: repeat(4,1fr);
+     }
+ }
+
+                                        /* Za tablet */
+
+ @media screen and (max-width:1020px){
+    .container{
+        width: var(--container-width-md);
+    }
+    nav{
+        height: 5rem;
+         
+    }
+    
+    .header-left h1{
+        font-size: 3rem;
+    }
+    .header-right img{
+        margin-top: 2rem;
+        max-width: 100%;
+    }
+    .inside-cart{
+        height: 520px;
+        width: 400px;
+        right: 31.5%;
+    }
+    .data-item p {
+        font-size: .9rem;
+    }
+    .data-item span{
+        font-size: .9rem;
+    }
+    #search {
+        width: 200px;
+    }
+     .sale {
+        margin-top: 4rem;
+         height: 70vh;
+     }
+     #subscribe{
+        flex: 1;
+         text-align: left;
+         padding-left:  1.2rem;
+         padding-top: .6rem;
+         padding-bottom: .6rem;
+         padding-right: 1rem;
+        
+    }
+    .benefit__container{
+        margin-top: 3rem;
+        height: 20vh;
+    }
+    .mobile-wrapper{
+        grid-template-columns: repeat(2,2fr);
+        margin-bottom: 2rem;
+    }
+    .watch-wrapper{
+        grid-template-columns: repeat(2,2fr);
+    }
+    .sale{
+        height: 43vh;
+    }
+    .title h4{
+        font-size:.8rem;
+        
+    }
+    .text p{
+        font-size: .6rem;
+    }
+    .iframe{
+        font-size: .8rem;
+    }
+    .testimonial-info p{
+        font-size: .9rem;
+    }
+    .contact-right button{
+        padding: .6rem 2rem;
+    }
+     .contact-left h1 {
+        font-size: 1.8rem;
+     }
+     .contact-left p{
+        font-size:.7rem;
+     }
+     .footer-container{
+        grid-template-columns: repeat(4,1fr);
+     }
+    .footer-first a{
+        font-size: 1.7rem;
+    }
+    .footer-second h3{
+        font-size: 1.4rem;
+        line-height: 1.1;
+    }
+    .footer-third h3{
+        font-size: 1.4rem;
+    }
+ }
+
+                                        /* Za telefone */
+@media screen and (max-width:600px){
+    .container{
+        width: var(--container-width-sm);
+    }
+    .middle{
+        display: none;
+        height: 150px;
+        align-items: center;
+        justify-content: center;
+        width: 350px;
+        background-color:rgb(7, 46, 65);
+        top: 92%;
+        position: absolute;
+        border-radius: 8px;
+         
+    }
+    .inside-cart{
+        width: 600px;
+    }
+    .middle ul li a {
+        
+        color: white;
+    }
+    .hamburger-menu{
+        display: block;
+    }
+    .nav__container .left h1{
+        font-size: 1.7rem;
+    }
+     
+    #search{
+        width: 150px;
+    }
+    .inside-cart {
+         width: 300px;
+         right: 50%;
+    }
+    
+    .header-left h1 {
+        font-size: 2rem;
+
+    }
+    header{
+        height: 50vh;
+    }
+    .title i{
+        font-size: .8rem;
+     }
+     .title h4{
+        font-size: .4rem;
+     }
+     .text p{
+        font-size: .5rem;
+     }
+     .mobile-wrapper{
+        grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+     }
+     .mobile-title h1{
+        font-size: 1.4rem;
+     }
+     .mobile-title a{
+        font-size: 1.2rem;
+     }
+     .watch-info p{
+        font-size: .8rem;
+     }
+     .watch-wrapper{
+        grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+     }
+     .sale{
+        height: 35vh;
+     }
+      
+     .sale-left h1{
+        font-size: 1.4rem;
+     }
+     .sale-left p{
+        font-size: 1rem;
+     }
+     .contact-left h1{
+        padding-top: 1.7rem;
+        font-size:1.4rem;
+        margin-bottom: .6rem;
+     }
+     .contact-left p{
+        font-size: .7rem;
+     }
+     .contact-us{
+        display: block;
+
+     }
+     #subscribe{
+        padding-left: .2rem;
+        padding-right: .4rem;
+     }
+     .contact-right button{
+        padding-left: .2rem;
+        padding-right: .2rem;
+        font-size: .8rem;
+     }
+     .contact-right{
+        margin-top: 1rem;
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+     }
+     .footer-first a{
+        font-size: 1.4rem;
+     }
+     .footer-container{
+        grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+        gap: .6rem;
+     }
+}
+
+ 
