@@ -1,0 +1,244 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+:root{
+    --white: #fff;
+    --purple-1:#e83e8c;
+    --gray:#909090;
+    /* --purple-1: */
+    --btn-color:rgb(184,94,219);
+    --btn-background: linear-gradient(343deg, rgba(184,94,219,1) 0%, rgba(128,94,212,1) 97%);
+}
+
+.hamburger-menu{
+    display: none;
+}
+.hidden-navbar {
+    height: 80px; /* Prilagodi visinu da bude kao Navbar */
+    visibility: hidden;
+  }
+  
+.nav-container{
+    margin: 0 auto;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #2d0a31;
+    position: sticky;
+    top: 0; /* Pozicija na kojoj postaje lepljiva */
+    z-index: 999; /* Održava navigaciju iznad ostalih elemenata */
+    
+}
+.links-container {
+    display: flex;
+    visibility: visible;
+    opacity: 1;
+    transform: none;
+  }
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+}
+.logo img{
+    width: 50px;
+}
+.logo h1{
+    color: var(--white);
+}
+.links-container{
+    display: flex;
+    align-items: center;
+    gap: 7rem;
+}
+ .links ul li a::after{
+    content: '';
+    position: absolute;
+    top: 22px;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: #e83e8c;
+    transition: width 0.4s ease;
+ }
+ .links ul li a:hover::after{
+    width: 100%;
+    
+ }
+ .links ul li a:hover {
+    color: #e83e8c;
+ }
+ .links ul  {
+    list-style: none;
+    display: flex;
+    gap: 4rem;
+}
+.links ul li a {
+      font-size: 15px;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    position: relative;
+}
+.links ul li a.active-link{
+    background-color:  #e83e8c;
+    padding: 10px 10px;
+    border-radius: 3px;
+    color: white;
+   
+}
+.links ul li a.active-link::after{
+    content: none;
+}
+.btn{
+    background: var(--btn-color);
+    background: var(--btn-background);
+    padding: .7rem 3rem;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    color: var(--white);
+    transition: background 0.7s ease;
+    font-weight: 800;
+}
+ .btn:hover{
+    background: rgb(155, 79, 184);
+    opacity: 0.7;   
+ }
+ .sign ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    
+}
+.sign ul li a  {
+    text-decoration: none;
+    color: var(--white);
+}
+@media screen and (max-width:1024px){
+ 
+    .logo img{
+        width: 50px;
+    }
+    .logo h1{
+        font-size: 20px;
+        color: var(--white);
+    }
+    .links ul li a::after{
+        content: '';
+        position: absolute;
+        top: 22px;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 3px;
+        background-color: #e83e8c;
+        transition: width 0.4s ease;
+     }
+     .links ul li a:hover::after{
+        width: 100%;
+        
+     }
+     .links ul li a:hover {
+        color: #e83e8c;
+     }
+     .links ul  {
+        list-style: none;
+        display: flex;
+        gap: 2rem;
+    }
+    .links ul li a {
+          font-size: 12px;
+        text-decoration: none;
+        color: #fff;
+        text-transform: uppercase;
+        position: relative;
+    }
+}
+
+@media screen and (max-width:768px){
+    .sign ul li a .btn{
+        padding: .5rem 2rem;
+    }
+    
+    .logo img{
+        width: 30px;
+    }
+    .logo {
+        gap: 0;
+    }
+    .logo h1{
+        font-size: 15px;
+        color: var(--white);
+    }
+    .links-container{
+        gap: 5rem;
+    }
+    .links ul {
+        gap: 1rem;
+    }
+
+    .links ul li a {
+        font-size: 12px;
+    }
+    .sign ul{
+        gap:2rem;
+    }
+   
+  
+}
+@media screen and (max-width:425px){
+    .links-container{
+        visibility: hidden;
+        position: relative;
+        background-color: #2d0a31;
+        opacity: 0;
+        transform: translateX(-100px);
+        transition: opacity 0.5s ease, transform 0.5s ease;
+        gap: 2rem;
+        width: 200px;
+        height: 350px;
+    }
+    .links ul{
+        margin-top: 1rem;
+        flex-direction: column;
+    }
+    .links ul li a{
+        color: var(--white);
+        font-weight: 800;
+    }
+ 
+    .sign{
+        flex-direction: column;
+    }
+    .links-container.show{
+        visibility: visible;
+        top: 80%;
+        right: 2%;
+        flex-direction: column;
+        position: absolute;
+        opacity: 1;
+        transform: translateX(0);
+    }
+    .hamburger-menu{
+        display: flex;
+        }
+        .bars{
+            color: var(--white);
+        }
+        .sign ul{
+            gap: 1rem;
+            flex-direction: column;
+        }
+       .sign ul li a .btn{
+            color: var(--white);
+        }
+}

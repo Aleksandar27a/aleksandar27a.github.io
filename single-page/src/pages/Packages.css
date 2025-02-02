@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.subscription-container h1{
+    padding-top: 10rem;
+    
+}
+ 
+
+
+
+@media screen and (max-width:1024px) {
+   
+    .information {
+        height: 110vh;
+    }
+}
+@media screen and (max-width:768px) {
+    .information {
+        height: 100vh;
+    }
+}
+@media screen and (max-width:425px) {
+    .information {
+        height: 150vh;
+    }
+    .info-second-left h1 {
+        font-size: 22px;
+    }   
+     .info-second-left p {
+        font-size: 14px;
+    }
+    .info-second-left li {
+        font-size: 16px;
+    }
+}
+
