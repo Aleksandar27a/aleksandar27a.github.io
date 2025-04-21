@@ -1,0 +1,72 @@
+form {
+    background-color: #f4f4f4;
+    padding: 1.5rem;
+    margin: 2rem auto;
+    max-width: 400px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  fieldset {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  legend {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  input[type="text"],
+  select {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+  }
+  
+  button {
+    padding: 0.5rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  .habit-container {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background-color: #fafafa;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  }
+  
+  .habit {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+  }
+  
+  .habit h1 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+  
+  .habit p {
+    margin: 0.3rem 0;
+    color: #555;
+  }
+      
