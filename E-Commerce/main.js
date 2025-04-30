@@ -30,55 +30,55 @@ function searchProdukt(){
     const produkti = [
         {
             ime: "iphone 10",
-            url: "/proizvodi/iphone10.html"
+            url: "proizvodi/iphone10.html"
         },
         {
             ime: "iphone 11",
-            url: "/proizvodi/iphone11.html"
+            url: "proizvodi/iphone11.html"
         },
         {
             ime:"iphone 12",
-            url: "/proizvodi/iphone12.html"
+            url: "proizvodi/iphone12.html"
         },
         {
             ime:"iphone 14",
-            url:"/proizvodi/iphone14.html"
+            url:"proizvodi/iphone14.html"
         },
         {
             ime:"samsung carribian",
-            url:'/proizvodi/carribian.html'
+            url:'proizvodi/carribian.html'
         },
         {
             ime:"Xiaomi Redmi 12",
-            url:'/proizvodi/redmi12.html'
+            url:'proizvodi/redmi12.html'
         },
         {
             ime:"Xiaomi 14T",
-            url:'/proizvodi/Xiaomi14.html'
+            url:'proizvodi/Xiaomi14.html'
         },
         {
             ime:"Huawei Nova 10SE",
-            url:'/proizvodi/Huawei.html'
+            url:'proizvodi/Huawei.html'
         },
         {
             ime:"Huawei Nova 10SE",
-            url:'/proizvodi/Huawei.html'
+            url:'proizvodi/Huawei.html'
         },
         {
             ime:"Galaxy Watch FE 2024",
-            url:'/proizvodi/galaxywatch.html'
+            url:'proizvodi/galaxywatch.html'
         },
         {
             ime:"SmartWatch FE 2020",
-            url:'/proizvodi/smartwatch.html'
+            url:'proizvodi/smartwatch.html'
         },
         {
             ime:"RoseGold SmartWatch",
-            url:'/proizvodi/rosegoldwatch.html'
+            url:'proizvodi/rosegoldwatch.html'
         },
         {
             ime:"SmartWatch Fit3",
-            url:'/proizvodi/fit3.html'
+            url:'proizvodi/fit3.html'
         },
     ]
         
@@ -129,15 +129,15 @@ else{
 
 document.addEventListener('DOMContentLoaded', () => {
     const products = [
-        { id: 0, productName: "Iphone 10", img: "/proizvodi/image/D_759471-MLA71782897602_092023-C.jpg", price: "1200$" },
-        { id: 1, productName: "Iphone 11", img: "/proizvodi/image/apple_iphone_11_white_1_7.jpg", price: "1300$" },
-        { id: 2, productName: "Iphone 12", img: "/proizvodi/image/iphone-12-blue.jpg", price: "1400$" },
-        { id: 3, productName: "Iphone 14", img: "/proizvodi/image/czcs_iphone14_q422_purple_pdp_image_position-1a_t_4_3.jpg", price: "1650$" },
+        { id: 0, productName: "Iphone 10", img: "/E-Commerce/proizvodi/image/D_759471-MLA71782897602_092023-C.jpg", price: "1200$" },
+        { id: 1, productName: "Iphone 11", img: "/E-Commerce/proizvodi/image/apple_iphone_11_white_1_7.jpg", price: "1300$" },
+        { id: 2, productName: "Iphone 12", img: "/E-Commerce/proizvodi/image/iphone-12-blue.jpg", price: "1400$" },
+        { id: 3, productName: "Iphone 14", img: "/E-Commerce/proizvodi/image/czcs_iphone14_q422_purple_pdp_image_position-1a_t_4_3.jpg", price: "1650$" },
         
-        { id: 4, productName: "Galaxy Watch FE", img: "/proizvodi/image/ph-galaxy-watch-fe-r861-sm-r861nzkaasa-542490468.avif", price: "1450$"},
-        { id: 5, productName: "Blue SmartWatch", img: "/proizvodi/image/uk-galaxy-watch-fe-r861-sm-r861nzsaeua-542493242.avif", price: "1150$"},
-        { id: 6, productName: "Galaxy Rose", img: "/proizvodi/image/ph-galaxy-watch-fe-r861-sm-r861nidaasa-542490440.avif", price: "1450$"},
-        { id: 7, productName: "Galaxy Fit3", img: "/proizvodi/image/ph-galaxy-fit3-r390-sm-r390nzaaaaaaaaaaaaaaaaasa-539943985.avif", price: "2150$"},
+        { id: 4, productName: "Galaxy Watch FE", img: "/E-Commerce/proizvodi/image/ph-galaxy-watch-fe-r861-sm-r861nzkaasa-542490468.avif", price: "1450$"},
+        { id: 5, productName: "Blue SmartWatch", img: "/E-Commerce/proizvodi/image/uk-galaxy-watch-fe-r861-sm-r861nzsaeua-542493242.avif", price: "1150$"},
+        { id: 6, productName: "Galaxy Rose", img: "/E-Commerce/proizvodi/image/ph-galaxy-watch-fe-r861-sm-r861nidaasa-542490440.avif", price: "1450$"},
+        { id: 7, productName: "Galaxy Fit3", img: "/E-Commerce/proizvodi/image/ph-galaxy-fit3-r390-sm-r390nzaaaaaaaaaaaaaaaaasa-539943985.avif", price: "2150$"},
         
     ];
 
