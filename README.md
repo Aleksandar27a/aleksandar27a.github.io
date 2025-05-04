@@ -13,7 +13,7 @@ I'm a passionate **Junior Front-End Developer** with a strong foundation in web 
 ---
 
 ### 🔧 Technologies & Tools
-- **Languages:** JavaScript (ES6+), HTML5, CSS3
+- **Languages:** JavaScript (ES6+), Typescript, HTML5, CSS3
 - **Frameworks/Libraries:** ReactJS, Bootstrap
 - **Version Control:** Git, GitHub
 - **Design:** Responsive Layouts, Flexbox, CSS Grid
