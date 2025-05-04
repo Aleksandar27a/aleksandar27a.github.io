@@ -41,7 +41,7 @@ A professional-looking landing page for a web hosting company with feature highl
 I’m actively seeking my first opportunity as a **junior front-end developer** or **freelancer**. Feel free to reach out if you have a chance, want to collaborate, or just want to connect.
 
 - 📧 Email: [astojiljkovic24@gmail.com]  
-- 💼 LinkedIn: [linkedin.com/in/yourprofile]([https://linkedin.com/in/yourprofile](https://www.linkedin.com/in/aleksandar-stojiljkovic-921951273/))  
+- 💼 LinkedIn: [linkedin.com/in/yourprofile]([https://www.linkedin.com/in/aleksandar-stojiljkovic-921951273/])  
 - 🌐 Portfolio: [aleksandar27a.github.io](https://aleksandar27a.github.io)
 
 ---
