@@ -25,20 +25,20 @@ Here are a few highlights from my work:
 
 #### 🛍️ E-Commerce Website
 A modern, responsive landing page for an online store with a clean layout and product sections. Built with HTML, CSS, and JavaScript.  
-🔗 [Live Demo](https://aleksandar27a.github.io/e-commerce) | 📂 [GitHub Repo](https://github.com/Aleksandar27a/aleksandar27a.github.io/tree/main/E-Commerce)
+ 📂 [GitHub Repo](https://github.com/Aleksandar27a/aleksandar27a.github.io/tree/main/E-Commerce)
 
 #### 🎮 Minesweeper Game
 A fully functional Minesweeper game recreated using JavaScript, with grid generation and interactive UI.  
-🔗 [Live Demo](https://aleksandar27a.github.io/minesweeper) | 📂 [GitHub Repo](https://github.com/Aleksandar27a/aleksandar27a.github.io/tree/main/MineSweeper)
+ 📂 [GitHub Repo](https://github.com/Aleksandar27a/aleksandar27a.github.io/tree/main/MineSweeper)
 
 #### 🌐 Web Hosting Site
 A professional-looking landing page for a web hosting company with feature highlights and pricing sections.  
-🔗 [Live Demo](https://aleksandar27a.github.io/webhosting) | 📂 [GitHub Repo](https://github.com/Aleksandar27a/aleksandar27a.github.io/tree/main/web-hosting-site)
+ 📂 [GitHub Repo](https://github.com/Aleksandar27a/aleksandar27a.github.io/tree/main/web-hosting-site)
 
 ---
 
 ### 📫 Get in Touch
-I’m actively looking for my first opportunity as a **junior front-end developer** or **freelancer**. Feel free to reach out if you have an opportunity, want to collaborate, or just want to connect.
+I’m actively seeking my first opportunity as a **junior front-end developer** or **freelancer**. Feel free to reach out if you have a chance, want to collaborate, or just want to connect.
 
 - 📧 Email: [astojiljkovic24@gmail.com]  
 - 💼 LinkedIn: [linkedin.com/in/yourprofile]([https://linkedin.com/in/yourprofile](https://www.linkedin.com/in/aleksandar-stojiljkovic-921951273/))  
