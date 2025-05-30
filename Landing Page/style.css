@@ -163,7 +163,7 @@ header{
  .showing{
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
      
  }.img-slide img {
     width: 100%;        /* Slika zauzima celu širinu svog kontejnera */
