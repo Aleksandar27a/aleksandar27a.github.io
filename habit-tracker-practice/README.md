@@ -8,7 +8,7 @@ A simple web application for tracking daily habits, featuring user authenticatio
 ## 🛠 Technologies Used
 - **Frontend:** ReactJS,TypeScript
 - **State Management:** Redux (Redux Toolkit), React Router
-- **Backend:** Firebase (Authentication, Firestore, Hosting)
+- **Backend:** Firebase (Authentication, Firestore)
 - **Version Control:** Git, GitHub
 
 ## ✨ Features
