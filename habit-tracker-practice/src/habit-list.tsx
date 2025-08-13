@@ -1,12 +1,13 @@
 import { useDispatch, useSelector } from "react-redux"
 import { toggleHabit } from "./HabitSlice"
-
+import { RootState } from "./store"
+import {removeHabit} from './HabitSlice'
 export const HabitList = () => {
-    const habits = useSelector((state)=> state.habits.habits)
+    const habits = useSelector((state:RootState)=> state.habits.habits)
     
     const dispatch = useDispatch()
     const today = new Date().toISOString().split('T')[0]
-  const habitStreak = (habit) =>{
+  const habitStreak = (habit: { completedAt: string | string[] }) =>{
     let streak = 0;
     const date = new Date();
     while(true){
@@ -21,6 +22,8 @@ export const HabitList = () => {
     }
     return streak;
   }
+
+ 
     return (
       <div className="habit-container">
       {habits.map((habit) => (
@@ -31,7 +34,8 @@ export const HabitList = () => {
           <button onClick={() => dispatch(toggleHabit({ id: habit.id, date: today }))}>
             {habit.completedAt.includes(today) ? "Unmark" : "Mark Completed"}
           </button>
-          <p>Current Streak: {habitStreak(habit)}</p>
+          <p id="streak">Current Streak: {habitStreak(habit)}</p>
+          <button onClick={()=> dispatch(removeHabit({id:habit.id}))} id='submit-btn' style={{backgroundColor:'red'}}>Remove</button>
         </div>
       ))}
     </div>
