@@ -13,8 +13,8 @@
 - **Version Control:** Git, GitHub – [Aleksandar27a](https://github.com/Aleksandar27a)
 
 ## ✨ Features
--Landing Page
--FAQ
--Responsive for mobile and desktop devices
--Sticky Navigation Menu
+- **Landing Page**
+-**FAQ**
+-**Responsive for mobile and desktop devices**
+-**Sticky Navigation Menu**
  
