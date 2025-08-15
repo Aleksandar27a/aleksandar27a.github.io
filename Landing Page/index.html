@@ -20,7 +20,7 @@
     <nav>
         <div class="container nav__container">
             <div class="nav-left">
-                <h1>BOOKMARK</h1>
+                <h2>Bookmark</h2>
             </div>
             <div class="nav-right">
                 <div class="list">
@@ -28,12 +28,13 @@
                         <li><a href="#">Features</a></li>
                         <li><a href="#">Pricing</a></li>
                         <li><a href="#">Contact</a></li>
+                        <li><a href="#">Login</a></li>
                     </ul>
                     
                 </div>
                 <div class="hamburger">
                     <button id="open-menu-btn"><i class="fa-solid fa-bars"></i></button>
-                    
+                    <button id="close-btn">X</button>
                 </div>
                     
                 </div>
@@ -46,12 +47,17 @@
         <header class="hero hidden">
             <div class="container hero__container">
                 <div class="hero-left">
-                    <h1>A Simple Book Manager</h1>
-                    <p>A clean and simple interface to organize your favourite websites. Open a new <br> browser tab and see your sites load instantly. Try it for free.</p> 
+                    <h1>A Simple Bookmark <br> Manager</h1>
+                    <p>A clean and simple interface to organize your favourite <br> websites. Open a new browser tab and see your sites load <br> instantly. Try it for free.</p> 
+                    <div class="hero-buttons">
+                        <button>Get it on Chrome</button>
+                        <button>Get it on Firefox</button>
+                    </div>
+                   
                 </div>
                 <div class="hero-right">
-                    <img src="images/heropng.png" alt="">
-
+                    <img src="images/illustration-hero.svg" alt="">
+                    <div class="pseudo"></div>
                 </div>
             </div>
         </header>
@@ -68,34 +74,31 @@
         </div>
         <div class="content">
             <div class="img-slide">
-                <img src="./images/istockphoto-1211213565-612x612.jpg" alt="">
+                
             </div>
             
             <div class="text">
-                <h2>Bookmark in one click</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, reprehenderit!</p>
+           
             </div>
         </div>
 
         <div class="content">
             <div class="img-slide">
-                <img src="./images/slider2.jpg" alt="">
+              
             </div>
             
             <div class="text">
-                <h2>Intelligent Search</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, reprehenderit!</p>
+             
             </div>
         </div>
 
         <div class="content">
             <div class="img-slide">
-                <img src="./images/5260294-ilustracao-grafico-desenho-personagem-de-pesquisa-online-vetor.jpg" alt="">
+                
             </div>
             
             <div class="text">
-                <h2>Share your bookmarks</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, reprehenderit!</p>
+                
             </div>
         </div>
     </div>
@@ -118,7 +121,7 @@
             </div>
 
             <div class="card-2"> 
-                <img src="./images/firefox.jfif" alt="">
+                <img src="./images/firefox.png" alt="">
                 <h4>Add to Firefox</h4>
                 <p>Minimum version 55</p>
                 <span></span>
@@ -151,7 +154,7 @@
                 </div>
             <div class="answer  ">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt justo eget <br> ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.</p>
-                <span class="minus"><i class="fa-solid fa-minus"></i></span>
+            
             </div>
 
               <div class="question">
@@ -160,7 +163,7 @@
             </div>
             <div class="answer  ">
                 <p>Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. br Mauris augue massa, ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.</p>
-                <span class="minus"><i class="fa-solid fa-minus"></i></span>
+             
             </div>
 
                 <div class="question">
@@ -169,7 +172,7 @@
                 </div>
             <div class="answer ">
                 <p>Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, <br> ut condimentum urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed sollicitudin ex et ultricies bibendum.</p>
-                <span class="minus"><i class="fa-solid fa-minus"></i></span>
+           
             </div>
 
                 <div class="question">
@@ -178,7 +181,7 @@
                 </div>
             <div class="answer ">
                 <p>Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam vitae neque eget nisl gravida pellentesque non ut velit.</p>
-                <span class="minus"><i class="fa-solid fa-minus"></i></span>
+        
             </div>
         </div>
         </div>
@@ -191,14 +194,11 @@
         <h2>Stay up-to-date with what <br> we're doing</h2>
         <div class="inputs">
             <div class="flex-input">
-                <input type="email" placeholder="Enter your email" id="input">
-                <button class="click">Contact Us</button>
+                <form>
+                <input type="email" placeholder="Enter your email" required id="input">
+                <input class="click" type="submit" value="Submit"> 
+            </form>
             </div>
-            
-            <div class="warning">
-                 
-                 <p class="paragraph">Whoops, make sure it's an email</p>
-             </div>
         </div>
        
     </div>
@@ -206,8 +206,9 @@
 
    <footer>
     <div class="container footer__container">
+        <h2>Bookmark</h2>
         <div class="left-footer">
-            <h2>Bookmark</h2>
+            
             <ul>
                 <li><a href="#">Features</a></li>
                 <li><a href="#">Pricing</a></li>

@@ -1,18 +1,62 @@
-document.addEventListener('DOMContentLoaded',function(){
-    const contents = document.querySelectorAll('.content')
-    contents.forEach(content=>{
-        content.classList.remove('showing')
-    })
-    const toggleBtn = document.querySelectorAll('.toggle-btn')
-    toggleBtn.forEach((btn,index)=>{
-        btn.addEventListener('click', function(){
-            contents.forEach(content=>{
-                content.classList.remove('showing')
-            })
-             contents[index].classList.add('showing')
+const contents = document.querySelectorAll('.content')
+const buttons = document.querySelectorAll('.toggle-btn')
+const imgSlide = document.querySelectorAll('.img-slide')
+const text = document.querySelectorAll('.text')
+
+
+const slideData = [
+    {
+        'id':'1',
+        'img':'./images/slider-1.png',
+        'title':'Bookmark in one click',
+        'text':'Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, reprehenderit!'
+
+    },  {
+        'id':'2',
+        'img':'./images/slider-2.png',
+        'title':'Intelligent Search',
+        'text':'Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, reprehenderit!'
+
+    },  {
+        'id':'3',
+        'img':'./images/slider-3.png',
+        'title':'Share your bookmarks',
+        'text':'Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, reprehenderit!'
+
+    }
+]
+
+let data = slideData 
+ 
+ window.addEventListener('DOMContentLoaded',()=>{
+    contents[0].classList.add('showing')
+
+    let image = document.createElement('img');
+    let title = document.createElement('h2');
+    let paragraph = document.createElement('p')
+    image.src = data[0].img
+    title.textContent = data[0].title
+    paragraph.textContent = data[0].text
+    imgSlide[0].appendChild(image);
+    text[0].appendChild(title) 
+    text[0].appendChild(paragraph) 
+
+
+    buttons.forEach((btn,index)=>{
+        btn.addEventListener('click',()=>{
+            contents.forEach((c)=>c.classList.remove('showing'))
+            contents[index].classList.add('showing')
+            image.src = data[index].img
+            title.textContent = data[index].title
+            paragraph.textContent = data[index].text
+            imgSlide[index].appendChild(image)
+            text[index].appendChild(title)
+            text[index].appendChild(paragraph)
         })
-    })
-})
+        })
+        
+ })
+
 
 //                                              FAQ
 
@@ -35,50 +79,25 @@ document.addEventListener('DOMContentLoaded',function(){
 
 
 
-                                                    // Input
-
-const input = document.getElementById('input')
-const button = document.querySelector('.click')
-const warning = document.querySelector('.warning')
-const p = document.querySelector('.paragraph')
  
-button.addEventListener('click', function(){
-    if(input.value === ""){
-        warning.style.display = 'block'
-    }else if(regexInput(input.value)){
-        warning.style.display = 'none'
-    }else{
-        warning.style.display = 'block'
-        p.textContent = 'Invalid Input'
-
-    }
-})
-
-
-function regexInput(e){
-    const regex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
-    return regex.test(e)
-}
-
 
                                                     // Hamburger menu
 
 const openBtn = document.getElementById('open-menu-btn');
+const closeBtn = document.getElementById('close-btn')
 const list = document.querySelector('.list');
-let openList = false;
-
-function isOpened() {
-    if (!openList) {
-        list.style.display = 'flex';
-        openList = true; 
-    } else {
-        list.style.display = 'none';
-        openList = false; 
-    }
-}
-
+ openBtn.style.display = 'block'
+ closeBtn.style.display = 'none'
+ 
+closeBtn.addEventListener('click',()=>{
+    openBtn.style.display = 'block';
+    list.classList.remove('active')
+    closeBtn.style.display = 'none'
+})
 openBtn.addEventListener('click', () => {
-    isOpened();
+     openBtn.style.display = 'none';
+     list.classList.add('active')
+     closeBtn.style.display = 'block'
 });
 
  
