@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <!-- <link rel="stylesheet" href="/style.css"> -->
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href='../styles/product.css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
                                             <!-- Poppins -->
                                              <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,7 +20,8 @@
                 <h1>MiniStore</h1>
             </div>
             <div class="middle">
-                <ul>
+                <ul class="list">
+                    <button class="close-menu">X</button>
                     <li><a href="/index.html">Home</a></li>
                     <li><a href="#">Products</a></li>
                     <li><a href="./blog.html">Blogs</a></li>
@@ -31,10 +32,15 @@
                 <div class="search">
                     <input type="search" id="search" onkeypress="handleEnter(event)">
                    <span class="loop"><i class="fa-solid fa-magnifying-glass"></i></span> 
+                   <div class="inside-search">
+                    <button class="close-search">X</button>
+                    <h2>Search products</h2>
+                   </div>
                 </div>
                 <div class="cart">
                     <span class="cart-icon"><i class="fa-solid fa-cart-shopping"></i></span>
                     <div class="inside-cart">
+                        <button class="close-btn">X</button>
                         <div class="cart-items">
                             0
                         </div>
@@ -49,7 +55,7 @@
                         
                     </div>
                 </div>
-                
+                <span class="hamburger-menu"><i class="fa-solid fa-bars"></i></span>  
             </div>
             
         </div>
@@ -66,7 +72,11 @@
                 <div class="mobile">
                     <div class="mob-info">
                         <img src="/proizvodi/image/D_759471-MLA71782897602_092023-C.jpg" alt="">
-                        <p>IPHONE 10 <span id="price">1200$</span> </p>
+                        <div class="info">
+                            <p>IPHONE 10</p>
+                            <span id="price">1200$</span> 
+                        </div>
+                       
                     </div>
                     <button class="add-to-cart">Add To Cart</button>
                 </div>
@@ -74,7 +84,11 @@
                 <div class="mobile">
                     <div class="mob-info">
                         <img src="/proizvodi/image/apple_iphone_11_white_1_7.jpg" alt="">
-                        <p>IPHONE 11 <span id="price">1300$</span> </p>
+                        <div class="info">
+                            <p>IPHONE 11  </p>
+                            <span id="price">1300$</span>
+                        </div>
+                       
                         
                     </div>
                     <button class="add-to-cart">Add To Cart</button>
@@ -85,7 +99,11 @@
                 <div class="mobile">
                     <div class="mob-info">
                         <img src="/proizvodi/image/iphone-12-blue.jpg" alt="">
-                        <p>IPHONE 12 <span id="price">1400$</span></p>
+                        <div class="info">
+                            <p>IPHONE 12</p>
+                            <span id="price">1400$</span>
+                        </div>
+                        
                     </div>
                     <button class="add-to-cart">Add To Cart</button>
                     
@@ -94,7 +112,11 @@
                 <div class="mobile">
                     <div class="mob-info">
                         <img src="/proizvodi/image/czcs_iphone14_q422_purple_pdp_image_position-1a_t_4_3.jpg" alt="">
-                        <p>IPHONE 14 <span id="price">1650$</span></p>
+                        <div class="info">
+                            <p>IPHONE 14</p>
+                            <span id="price">1650$</span>
+                        </div>
+                        
                     </div>
                     
                     <button class="add-to-cart">Add To Cart</button>
@@ -103,7 +125,11 @@
                 <div class="mobile">
                     <div class="mob-info">
                         <img src="/proizvodi/image/latin-en-galaxy-a06-sm-a065-sm-a065mlbdgto-thumb-543823812.avif" alt="">
-                        <p>Samsung Carribien <span id="price">800$</span></p>
+                        <div class="info">
+                            <p>Samsung Carribien</p>
+                            <span id="price">800$</span>
+                        </div>
+                        
                     </div>
                     
                     <button class="add-to-cart">Add To Cart</button>
@@ -112,7 +138,11 @@
                 <div class="mobile">
                     <div class="mob-info">
                         <img src="/proizvodi/image/xiaomi-smart-telefon-redmi-12-4gb-128gb-plavi-cene.jpg" alt="">
-                        <p>Redmi 12 <span id="price">750$</span></p>
+                        <div class="info">
+                            <p>Redmi 12 </p>
+                            <span id="price">750$</span>
+                        </div>
+                        
                     </div>
                     
                     <button class="add-to-cart">Add To Cart</button>
@@ -120,7 +150,11 @@
                 <div class="mobile">
                     <div class="mob-info">
                         <img src="/proizvodi/image/e6b2c9986d1b9610f6c4b2eee18bff8f!400x400!85.png" alt="">
-                        <p>Xiaomi 14T <span id="price">1400$</span></p>
+                        <div class="info">
+                            <p>Xiaomi 14T</p>
+                            <span id="price">1400$</span>
+                        </div>
+                       
                     </div>
                     
                     <button class="add-to-cart">Add To Cart</button>
@@ -128,7 +162,11 @@
                 <div class="mobile">
                     <div class="mob-info">
                         <img src="/proizvodi/image/92397.png" alt="">
-                        <p>Huawei Nova 10SE <span id="price">1100$</span></p>
+                        <div class="info">
+                            <p>Huawei Nova 10SE</p>
+                            <span id="price">1100$</span>
+                        </div>
+                        
                     </div>
                     
                     <button class="add-to-cart">Add To Cart</button>
@@ -143,7 +181,11 @@
                 <div class="watch">
                     <div class="watch-info">
                         <img src="/proizvodi/image/ph-galaxy-watch-fe-r861-sm-r861nzkaasa-542490468.avif" alt="">
-                        <p>Galaxy Watch FE 2024 <span id="price">1450$</span></p>
+                        <div class="info">
+                            <p>Galaxy Watch FE 2024 </p>
+                            <span id="price">1450$</span>
+                        </div>
+                       
                     </div>
                     <button class="add-to-cart">Add To Cart</button>
                 </div>
@@ -151,7 +193,10 @@
                 <div class="watch">
                     <div class="watch-info">
                         <img src="/proizvodi/image/uk-galaxy-watch-fe-r861-sm-r861nzsaeua-542493242.avif" alt="">
-                        <p>SmartWatch FE 2020 <span id="price">1150$</span></p>
+                        <div class="info">
+                            <p>SmartWatch FE 2020</p>
+                            <span id="price">1150$</span>
+                        </div>
                     </div>
                     <button class="add-to-cart">Add To Cart</button>
                 </div>
@@ -159,7 +204,11 @@
                 <div class="watch">
                     <div class="watch-info">
                         <img src="/proizvodi/image/ph-galaxy-watch-fe-r861-sm-r861nidaasa-542490440.avif" alt="">
-                        <p>Galaxy Watch Rose <span id="price">1650$</span></p>
+                        <div class="info">
+                            <p>Galaxy Watch Rose </p>
+                            <span id="price">1650$</span>
+                        </div>
+                        
                     </div>
                     <button class="add-to-cart">Add To Cart</button>
                 </div>
@@ -167,7 +216,11 @@
                 <div class="watch">
                     <div class="watch-info">
                         <img src="/proizvodi/image/ph-galaxy-fit3-r390-sm-r390nzaaaaaaaaaaaaaaaaasa-539943985.avif" alt="">
-                        <p>Galaxy Fit3 <span id="price">800$</span></p>
+                        <div class="info">
+                            <p>Galaxy Fit3</p>
+                            <span id="price">800$</span>
+                        </div>
+                        
                     </div>
                     <button class="add-to-cart">Add To Cart</button>
                 </div>
@@ -227,5 +280,6 @@
 
 
     <script src="/proizvodi/product.js"></script>
+    <script src="/main.js"></script>
 </body>
 </html>

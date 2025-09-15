@@ -1,20 +1,36 @@
 
 
 const loop = document.querySelector('.loop');
-const search = document.getElementById('search')
+const search = document.getElementById('search');
+const bodyEl = document.querySelector('body')
+const insideSearch = document.querySelector('.inside-search');
+const smallScreenOpen = window.matchMedia("(max-width:425px)")
+const closeSearch = document.querySelector('.close-search')
 let isSearch = false
 loop.addEventListener('click', ()=>{
-   activateLoop()
-})
-function activateLoop(){
-    if(!isSearch){
+    if(smallScreenOpen.matches){
+        insideSearch.style.display = 'block';
+        search.style.display = 'flex';
+        bodyEl.style.overflow = 'hidden';
+        return;
+    }
+    if(!isSearch && !smallScreenOpen.matches){
         search.style.display = 'flex'
         return isSearch = true
-    }else{
+    }
+    else{
         search.style.display = 'none'
         return isSearch = false
     }
-}
+})
+closeSearch.addEventListener('click',()=>{
+    insideSearch.style.display = 'none'
+    search.style.display = 'none'
+    bodyEl.style.overflow = 'visible'
+})
+ 
+   
+ 
 
                                                 // Search filter
 
@@ -101,25 +117,16 @@ function searchProdukt(){
 const cartBag = document.querySelector('.cart-icon');
 const insideCart = document.querySelector('.inside-cart')
 const body = document.querySelector('body');
-
-let closeCart = false;
+const closeBtn = document.querySelector('.close-btn')
+ 
 cartBag.addEventListener('click', ()=>{
-    if(!closeCart){
-        
         insideCart.style.display = 'block';
         insideCart.style.opacity = 1;
-        body.classList.add('body-overlay')
-       return  closeCart = true
-    }
-   
-else{
-    insideCart.style.display = 'none';
-    
-    return closeCart = false
-}
 })
 
-
+closeBtn.addEventListener('click',()=>{
+    insideCart.style.display = 'none'
+})
 
 
 
@@ -268,10 +275,10 @@ const observer = new IntersectionObserver((entries) => {
     });
 });
 
-// Koristi querySelectorAll da selektuješ sve odgovarajuće elemente
+ 
 const blogs = document.querySelectorAll('.about-blog'); 
 
-// Primeni observer na svaki od tih elemenata
+ 
 blogs.forEach((el) => {
     observer.observe(el);
 });
@@ -280,5 +287,26 @@ const blogTechnology = document.querySelectorAll('.blog-technology')
 blogTechnology.forEach((els)=>{
     observer.observe(els);
 })
+
+
+
+                                                                                // Hamburger menu
+
+
+const menuBar = document.querySelector('.hamburger-menu');
+const menuList = document.querySelector('.list');
+const buttonClose = document.querySelector('.close-menu')
+ 
+menuBar.addEventListener('click',()=>{
+    menuList.style.display = 'block'
+    bodyEl.style.overflow = 'hidden'
+})
+buttonClose.addEventListener('click',()=>{
+    menuList.style.display = 'none'
+     bodyEl.style.overflow = 'visible'
+})
+
+
+
 
 
